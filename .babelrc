@@ -1,0 +1,22 @@
+{
+  "presets": [
+    "react-app"
+  ],
+  "plugins": [
+    [
+      "import",
+      {
+        "libraryName": "antd",
+        "libraryDirectory": "lib",
+        "style": true
+      },
+      "ant"
+    ],
+    [
+      "@babel/plugin-proposal-decorators", // 启用装饰器
+      {
+        "legacy": true
+      }
+    ]
+  ]
+}
