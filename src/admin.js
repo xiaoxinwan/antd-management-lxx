@@ -2,6 +2,7 @@ import React from "react";
 import { Row, Col } from "antd";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Home from './pages/home'
 
 import "./style/common.less";
 import NavLeft from "./components/NavLeft";
@@ -15,7 +16,9 @@ export default class Admin extends React.Component {
         </Col>
         <Col className="main" span={20}>
           <Header />
-          <Row className="content-container">这里边是有东西的</Row>
+          <Row className="content-container">
+            <Home />
+          </Row>
           <Footer />
         </Col>
       </Row>
