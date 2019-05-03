@@ -11,7 +11,8 @@ import Modals from "./pages/ui/modals";
 import Notifications from './pages/ui/notification';
 import Messages from './pages/ui/messages';
 import XTabs from './pages/ui/tabs'
-
+import Gallery from './pages/ui/gallery'
+import XCarousel from "./pages/ui/carousel";
 export default class XRouter extends React.Component {
   render() {
     return (
@@ -31,10 +32,10 @@ export default class XRouter extends React.Component {
                   component={Notifications}
                 />
                 <Route path="/admin/ui/messages" component={Messages} />
-                <Route
-                  path="/admin/ui/tabs"
-                  component={XTabs}
-                />
+                <Route path="/admin/ui/tabs" component={XTabs} />
+                <Route path="/admin/ui/gallery" component={Gallery} />
+                <Route path="/admin/ui/carousel" component={XCarousel} />
+
                 {/* <Route component={NoMatch} /> */}
               </Admin>
             )}
