@@ -1,9 +1,16 @@
+function addZero(time) {
+  return time<10 ? `0${time}`: time
+}
+
 export default {
   formatDate(time) {
     if (!time) return;
     let date = new Date(time);
-    return `${date.getFullYear()}-${date.getMonth() +
-      1}-${date.getDate()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+    return `${date.getFullYear()}-${addZero(date.getMonth() + 1)}-${addZero(
+      date.getDate()
+    )} ${addZero(date.getHours())}:${addZero(date.getMinutes())}:${addZero(
+      date.getSeconds()
+    )}`;
   },
   pagination(data, callback) {
     return {

@@ -8,15 +8,16 @@ import Buttons from "./pages/ui/buttons";
 import NoMatch from "./pages/no-match";
 import Loadings from "./pages/ui/loadings";
 import Modals from "./pages/ui/modals";
-import Notifications from './pages/ui/notification';
-import Messages from './pages/ui/messages';
-import Tabs from './pages/ui/tabs'
-import Gallery from './pages/ui/gallery'
+import Notifications from "./pages/ui/notification";
+import Messages from "./pages/ui/messages";
+import Tabs from "./pages/ui/tabs";
+import Gallery from "./pages/ui/gallery";
 import Carousel from "./pages/ui/carousel";
-import FormLogin from './pages/form/login';
-import FormRegister from './pages/form/register'
+import FormLogin from "./pages/form/login";
+import FormRegister from "./pages/form/register";
 import BasicTable from "./pages/table/basicTable";
 import HighTable from "./pages/table/highTable";
+import City from "./pages/city";
 export default class XRouter extends React.Component {
   render() {
     return (
@@ -43,6 +44,7 @@ export default class XRouter extends React.Component {
                 <Route path="/admin/form/reg" component={FormRegister} />
                 <Route path="/admin/table/basic" component={BasicTable} />
                 <Route path="/admin/table/high" component={HighTable} />
+                <Route path="/admin/city" component={City} />
                 {/* <Route component={NoMatch} /> */}
               </Admin>
             )}
