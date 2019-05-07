@@ -80,7 +80,7 @@ export default [
   {
     title: "订单管理",
     key: "/admin/order",
-    children: [
+    btnList: [
       {
         title: "订单详情",
         key: "detail"
